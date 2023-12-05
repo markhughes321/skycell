@@ -17,8 +17,6 @@ Feature: Sensor Data Ingestion
     And request sensorIngestion
     When method post
     Then status 201
-    And print response
-    * print sensorIngestion
 
   
     Examples:

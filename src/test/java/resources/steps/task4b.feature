@@ -34,7 +34,6 @@ Feature: Sensor Data Verification
     """
     When method post
     Then status 200
-    And print response
     And match response == expectedResponse
     
     Examples:

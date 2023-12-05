@@ -18,7 +18,6 @@ Feature: Logger Creation Test
     """
     When method post
     Then status 201
-    And print response
 
     Examples:
       | loggerType  | baseInterval  |
