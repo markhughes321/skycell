@@ -1,13 +1,13 @@
-name: Automated Nightly Runs
+name: Nightly Karate Tests
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:  
+    - cron: '0 0 * * *'  # Runs at 1 AM CET
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   run-karate-tests:
-    runs-on: ubuntu-latest  # Specify the runner
+    runs-on: ubuntu-latest
 
     steps:
     - name: Check out repository
@@ -26,3 +26,12 @@ jobs:
 
     - name: Run Karate Tests
       run: mvn clean test
+
+    - name: Zip Cucumber Reports
+      run: zip -r cucumber-reports.zip target/cucumber-html-reports
+
+    - name: Upload Cucumber Reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: cucumber-reports
+        path: cucumber-reports.zip

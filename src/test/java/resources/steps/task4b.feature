@@ -5,11 +5,11 @@ Feature: Sensor Data Verification
 
 
   Background: 
-    * url sensorUrl
+    * url verificationUrl
     * header apiKey = apiKey
 
   Scenario Outline: Sensor Data Verification
-    Given path 'v1', 'lora', 'uplink'
+    Given path 'v1', 'logger', 'custom'
     And request 
     """
       {
@@ -27,7 +27,8 @@ Feature: Sensor Data Verification
       }
     """
     When method post
-    Then status 201
+    Then status 200
+    And print response
 
     Examples:
       | dataTypes       | sensorCodes     |

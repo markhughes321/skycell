@@ -6,9 +6,9 @@ function fn() {
   }
   var config = {
     env: env,
-    googleUrl: 'https://google.com/',
     authUrl: 'https://keycloak.dev.skycell.ch',
     sensorUrl: 'https://sensor-data-ingestion.dev.skycell.ch',
+    verificationUrl: 'https://sensor-data-access.dev.skycell.ch',
     apiKey: 'NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA'
 
   }
