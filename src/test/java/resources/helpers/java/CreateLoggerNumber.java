@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class CreateLoggerNumber {
 
-    private static final int MAX_HEX_LENGTH = 16;
+    private static final int MAX_HEX_LENGTH = 15;
 
     public static String generateLoggerNumber() {
         Random random = new Random();

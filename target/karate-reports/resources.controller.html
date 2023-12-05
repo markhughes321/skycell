@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-12-05 03:06:12 p.m.</div>
+    <div>2023-12-05 04:10:47 p.m.</div>
   </div>        
 </div>
 
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1906</span>
+              <span>ms:</span>&nbsp;<span>2018</span>
             </div>
           </div>
           <div class="step-row">
@@ -85,7 +85,7 @@
         <span>*</span>&nbsp;<span>def CreateLoggerNumber = Java.type(&#39;resources.helpers.java.CreateLoggerNumber&#39;);</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -94,7 +94,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.6">15:06:10.273 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.6">16:10:45.392 karate.env system property was: null 
 </div>   
 
   
@@ -261,7 +261,7 @@
         <span>*</span>&nbsp;<span>def authenticate = call read(&#39;classpath:resources/steps/task2.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">469</div>
+    <div class="time-cell passed">521</div>
   </div>
 
    
@@ -280,7 +280,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">resources.steps.task2</div>
       </div>
-      <div class="time-cell passed">460</div>
+      <div class="time-cell passed">514</div>
     </div>
     <div>
       <div><div>
@@ -324,7 +324,7 @@
         <span>*</span>&nbsp;<span>def credentials = { client_id: &#39;webapp&#39;, grant_type: &#39;password&#39;, username: &#39;qa_interview@skycell.ch&#39;, password: &#39;Qa_interview2023!&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -352,7 +352,7 @@
         <span>*</span>&nbsp;<span>def expectedResponse = read(&#39;classpath:resources/respones/auth.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -380,7 +380,7 @@
         <span>Given</span>&nbsp;<span>path &#39;realms&#39;, &#39;skycell&#39;, &#39;protocol&#39;, &#39;openid-connect&#39;, &#39;token&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -408,7 +408,7 @@
         <span>And</span>&nbsp;<span>form fields credentials</span>
       </div>
     </div>
-    <div class="time-cell passed">41</div>
+    <div class="time-cell passed">42</div>
   </div>
 
    
@@ -436,7 +436,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">404</div>
+    <div class="time-cell passed">451</div>
   </div>
 
    
@@ -445,7 +445,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.15.0.call.0.13">15:06:10.434 request:
+  <div class="preformatted" data-parent="0.15.0.call.0.13">16:10:45.607 request:
 1 &gt; POST https://keycloak.dev.skycell.ch/realms/skycell/protocol/openid-connect/token
 1 &gt; Content-Type: application/x-www-form-urlencoded
 1 &gt; Content-Length: 100
@@ -455,7 +455,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&amp;password=Qa_interview2023%21
 
-15:06:10.760 response time in milliseconds: 326
+16:10:45.925 response time in milliseconds: 317
 1 &lt; 200
 1 &lt; Cache-Control: no-store
 1 &lt; Content-Length: 3773
@@ -468,8 +468,8 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Xss-Protection: 1; mode=block
-1 &lt; Date: Tue, 05 Dec 2023 15:06:10 GMT
-{&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMdXpuc3hrWS15anNLdnFicVotc1ZPS1lWT2FhT1Z5UUFsSTdoSEllWTE0In0.eyJleHAiOjE3MDE4MzkxNzAsImlhdCI6MTcwMTc4ODc3MCwianRpIjoiYWEzZWQyMzMtYzVlNS00MDUzLWFmYzMtMzc5NDc2ZGEyNTc3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6WyJ3ZWJhcHAiLCJkb2N1bWVudC1nZW5lcmF0b3ItbG9jYWwiLCJhY2NvdW50Il0sInN1YiI6ImMwNTZlNTVhLTQ1ZWMtNGRjNi1hMjFmLTMwN2YyN2IyODU3MiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYmFwcCIsInNlc3Npb25fc3RhdGUiOiIzYmYwYmMyOC03NzAzLTQ2OTMtOGQ3ZC1mMzYyM2NjMzZiNzYiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9za3luZXQucG9jLnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3luZXQuZGVtby5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdDo2MDA2IiwiaHR0cHM6Ly9za3ljZW50ZXIuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9zZWN1cmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lwb3J0YWwuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGwtYWcuZ2l0aHViLmlvIiwiaHR0cDovL2xvY2FsaG9zdDo4MTAwIiwiaHR0cDovL2xvY2FsaG9zdDo2MDYwIiwiaHR0cHM6Ly9za3ltaW5kLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW5ldC50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbnRlci50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NlY3VyZS5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2VjdXJlLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5c2hpcG5ldy5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5bmV0LmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnByZS5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLnBvYy5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdCIsImh0dHBzOi8vc2t5c2hpcC5kZW1vLnNreWNlbGwuY2giLCJodHRwOi8vbG9jYWxob3N0OjMwMDEiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL3NreWNvcmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnBvYy5za3ljZWxsLmNoIiwiaHR0cHM6Ly9kZW1vcGFydG5lcnBvcnRhbC4zc2NhcHBzLmNvbSIsImh0dHBzOi8vc2t5Y2VudGVyLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGxwYXJ0bmVycG9ydGFsLjNzY2FwcHMuY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6IndlYmFwcCBlbWFpbCBwcm9maWxlIGRvY3VtZW50LWdlbmVyYXRvciIsInNpZCI6IjNiZjBiYzI4LTc3MDMtNDY5My04ZDdkLWYzNjIzY2MzNmI3NiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUUEgSW50ZXJ2aWV3IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2giLCJnaXZlbl9uYW1lIjoiUUEiLCJmYW1pbHlfbmFtZSI6IkludGVydmlldyIsImVtYWlsIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2gifQ.hSYILA9Li-pZKyv3Fz2BMpQU7e6h-eghlDLIfHvYPOPF04izpILrGkhdsYTkB5xd6Bb3I1cnL4VoO9ggxnWvcWv5-ky7CRf7fzdmHABr_cVHPoeyu8JPNujgjIW7xW1QnFUQyVbCBrxZ5EURxwocWaIpRbQszK4fN0rQWu4LO1bwSRnbzXMy2N1aQn_RNCPwwRw2_NZmeYHPxFxx_bvnS5V8j8t52mglhqbLnhyf8kOqwt642eKcqSa0WiUp6fODKk2vIpZ9bMcenU0Gc70zIDFp0QcsyNaX8ZmCPm7jWI3Qod-MQo1_iETGeHeoYwiiFUsN43UQwdbcgngSQ6BzNg&quot;,&quot;expires_in&quot;:50400,&quot;refresh_expires_in&quot;:14400,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1N2UxMGU1Yi1hMjg3LTQ1ZWItYWE5My0wOWE3MTI0OGY3Y2UifQ.eyJleHAiOjE3MDE4MDMxNzAsImlhdCI6MTcwMTc4ODc3MCwianRpIjoiZmY5MTM3ZTQtMmZjNS00NWM3LTgxMTEtNjdlMzk3ZDQxMDM5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6Imh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2gvcmVhbG1zL3NreWNlbGwiLCJzdWIiOiJjMDU2ZTU1YS00NWVjLTRkYzYtYTIxZi0zMDdmMjdiMjg1NzIiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoid2ViYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjNiZjBiYzI4LTc3MDMtNDY5My04ZDdkLWYzNjIzY2MzNmI3NiIsInNjb3BlIjoid2ViYXBwIGVtYWlsIHByb2ZpbGUgZG9jdW1lbnQtZ2VuZXJhdG9yIiwic2lkIjoiM2JmMGJjMjgtNzcwMy00NjkzLThkN2QtZjM2MjNjYzM2Yjc2In0.Tl1ess186L9fRSVNzdqSgFYNDRYQCGtBt9MB836iAlc&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;not-before-policy&quot;:1680026173,&quot;session_state&quot;:&quot;3bf0bc28-7703-4693-8d7d-f3623cc36b76&quot;,&quot;scope&quot;:&quot;webapp email profile document-generator&quot;}
+1 &lt; Date: Tue, 05 Dec 2023 16:10:45 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMdXpuc3hrWS15anNLdnFicVotc1ZPS1lWT2FhT1Z5UUFsSTdoSEllWTE0In0.eyJleHAiOjE3MDE4NDMwNDUsImlhdCI6MTcwMTc5MjY0NSwianRpIjoiYjUxY2JiODMtZWZlZi00MmQxLWE3ZjktMGJmMGFlYTg3OTg3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6WyJ3ZWJhcHAiLCJkb2N1bWVudC1nZW5lcmF0b3ItbG9jYWwiLCJhY2NvdW50Il0sInN1YiI6ImMwNTZlNTVhLTQ1ZWMtNGRjNi1hMjFmLTMwN2YyN2IyODU3MiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYmFwcCIsInNlc3Npb25fc3RhdGUiOiIzOWFjMjRjYy1lNWM5LTQxNzgtYmZjZi00ZGE4NDlhMGU5MDQiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9za3luZXQucG9jLnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3luZXQuZGVtby5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdDo2MDA2IiwiaHR0cHM6Ly9za3ljZW50ZXIuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9zZWN1cmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lwb3J0YWwuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGwtYWcuZ2l0aHViLmlvIiwiaHR0cDovL2xvY2FsaG9zdDo4MTAwIiwiaHR0cDovL2xvY2FsaG9zdDo2MDYwIiwiaHR0cHM6Ly9za3ltaW5kLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW5ldC50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbnRlci50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NlY3VyZS5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2VjdXJlLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5c2hpcG5ldy5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5bmV0LmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnByZS5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLnBvYy5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdCIsImh0dHBzOi8vc2t5c2hpcC5kZW1vLnNreWNlbGwuY2giLCJodHRwOi8vbG9jYWxob3N0OjMwMDEiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL3NreWNvcmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnBvYy5za3ljZWxsLmNoIiwiaHR0cHM6Ly9kZW1vcGFydG5lcnBvcnRhbC4zc2NhcHBzLmNvbSIsImh0dHBzOi8vc2t5Y2VudGVyLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGxwYXJ0bmVycG9ydGFsLjNzY2FwcHMuY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6IndlYmFwcCBlbWFpbCBwcm9maWxlIGRvY3VtZW50LWdlbmVyYXRvciIsInNpZCI6IjM5YWMyNGNjLWU1YzktNDE3OC1iZmNmLTRkYTg0OWEwZTkwNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUUEgSW50ZXJ2aWV3IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2giLCJnaXZlbl9uYW1lIjoiUUEiLCJmYW1pbHlfbmFtZSI6IkludGVydmlldyIsImVtYWlsIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2gifQ.Kh453g_kA8ePUE6GsiSxebi1qLyDayKy3JGHmfQUa1r6rRicRw3x7zhL2P3gtUmOH5lo-cHq8SmvaLmym0hNaepdvOmVRG88a4FsQH7hTuxcEqVOV-OYOkjYtsVYXpgeanfCF4qky82jtD3lmbdMhbWJGXx2snr1_mLfmhxt093iu-q5dkvNB7t6_r1JEgBF65G_inPQDJbleBU61O1Vu_bCsypSIWyj7cpLi9PIJwocWcCweINlOIenht24h83qxRj-2IeUZuKSLzwyrLy2HZbbzq_zYqU8o0s18CiwdVre1keDUS8OmsREUuxkGvnDZAEAJ7BF90F239leksGR5g&quot;,&quot;expires_in&quot;:50400,&quot;refresh_expires_in&quot;:14400,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1N2UxMGU1Yi1hMjg3LTQ1ZWItYWE5My0wOWE3MTI0OGY3Y2UifQ.eyJleHAiOjE3MDE4MDcwNDUsImlhdCI6MTcwMTc5MjY0NSwianRpIjoiY2NkZTljYjQtOTVjZS00Y2ZjLThiYmMtYzE5ZWVjODkxNWQyIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6Imh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2gvcmVhbG1zL3NreWNlbGwiLCJzdWIiOiJjMDU2ZTU1YS00NWVjLTRkYzYtYTIxZi0zMDdmMjdiMjg1NzIiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoid2ViYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjM5YWMyNGNjLWU1YzktNDE3OC1iZmNmLTRkYTg0OWEwZTkwNCIsInNjb3BlIjoid2ViYXBwIGVtYWlsIHByb2ZpbGUgZG9jdW1lbnQtZ2VuZXJhdG9yIiwic2lkIjoiMzlhYzI0Y2MtZTVjOS00MTc4LWJmY2YtNGRhODQ5YTBlOTA0In0.E_WvJIMNDbCYl58XP__EE31d8u19zwjF7J0zQdEy3uk&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;not-before-policy&quot;:1680026173,&quot;session_state&quot;:&quot;39ac24cc-e5c9-4178-bfcf-4da849a0e904&quot;,&quot;scope&quot;:&quot;webapp email profile document-generator&quot;}
 </div>   
 
   
@@ -585,7 +585,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorDataIngestion = call read(&#39;classpath:resources/steps/task4a.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1124</div>
+    <div class="time-cell passed">1186</div>
   </div>
 
    
@@ -604,7 +604,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <div class="step-indent"></div>
         <div class="step-cell passed">resources.steps.task4a</div>
       </div>
-      <div class="time-cell passed">1099</div>
+      <div class="time-cell passed">1159</div>
     </div>
     <div>
       <div><div>
@@ -676,7 +676,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorIngestion = read(&#39;classpath:resources/requests/sensorIngestion.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -785,10 +785,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">174</div>
   </div>
 
    
@@ -797,68 +797,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.1.16">15:06:10.783 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T15:06:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.1.16">16:10:45.954 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:10:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:46.125 response time in milliseconds: 171
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:46 GMT
+
 </div>   
 
   
@@ -873,50 +827,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.1.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">153</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.1.17">15:06:10.784 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:06:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:10.936 response time in milliseconds: 152
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:10 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.1.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -1008,7 +918,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorIngestion = read(&#39;classpath:resources/requests/sensorIngestion.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1117,10 +1027,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">152</div>
   </div>
 
    
@@ -1129,68 +1039,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.2.16">15:06:10.944 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T15:16:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.2.16">16:10:46.133 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:20:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:46.284 response time in milliseconds: 151
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:46 GMT
+
 </div>   
 
   
@@ -1205,50 +1069,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.2.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">152</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.2.17">15:06:10.945 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:16:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:11.096 response time in milliseconds: 151
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.2.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -1396,7 +1216,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>And</span>&nbsp;<span>set sensorIngestion.received_at = tenMinuteIntervals[1]</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1449,10 +1269,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">187</div>
   </div>
 
    
@@ -1461,68 +1281,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.3.16">15:06:11.102 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T15:26:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.3.16">16:10:46.291 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:30:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:46.477 response time in milliseconds: 186
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:46 GMT
+
 </div>   
 
   
@@ -1537,50 +1311,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.3.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">152</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.3.17">15:06:11.103 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:26:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:11.254 response time in milliseconds: 151
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.3.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -1672,7 +1402,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorIngestion = read(&#39;classpath:resources/requests/sensorIngestion.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1781,10 +1511,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">157</div>
   </div>
 
    
@@ -1793,68 +1523,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.4.16">15:06:11.260 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T15:36:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.4.16">16:10:46.486 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:40:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:46.641 response time in milliseconds: 154
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:46 GMT
+
 </div>   
 
   
@@ -1869,50 +1553,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.4.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">151</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.4.17">15:06:11.261 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:36:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:11.411 response time in milliseconds: 150
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.4.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -2004,7 +1644,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorIngestion = read(&#39;classpath:resources/requests/sensorIngestion.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2113,10 +1753,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">153</div>
   </div>
 
    
@@ -2125,68 +1765,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.5.16">15:06:11.417 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T15:46:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.5.16">16:10:46.647 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:50:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:46.799 response time in milliseconds: 152
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:46 GMT
+
 </div>   
 
   
@@ -2201,50 +1795,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.5.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">155</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.5.17">15:06:11.418 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:46:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:11.571 response time in milliseconds: 153
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.5.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -2445,10 +1995,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">155</div>
   </div>
 
    
@@ -2457,68 +2007,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.6.16">15:06:11.580 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T15:56:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.6.16">16:10:46.807 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T17:00:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:46.961 response time in milliseconds: 153
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:47 GMT
+
 </div>   
 
   
@@ -2533,50 +2037,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.6.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">151</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.6.17">15:06:11.581 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:56:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:11.730 response time in milliseconds: 148
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.6.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -2668,7 +2128,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorIngestion = read(&#39;classpath:resources/requests/sensorIngestion.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2777,10 +2237,10 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
       <div class="step-ref passed">16</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print sensorIngestion</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">153</div>
   </div>
 
    
@@ -2789,68 +2249,22 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.19.0.call.7.16">15:06:11.740 [print] {
-  &quot;end_device_ids&quot;: {
-    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
-    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
-  },
-  &quot;received_at&quot;: &quot;2023-12-05T16:06:10&quot;,
-  &quot;uplink_message&quot;: {
-    &quot;decoded_payload&quot;: {
-      &quot;sensorData&quot;: [
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 10,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 0,
-          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 20,
-              &quot;voltage&quot;: 1.3
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 1,
-          &quot;typeText&quot;: &quot;Battery voltage&quot;
-        },
-        {
-          &quot;amount&quot;: 1,
-          &quot;dataPoints&quot;: [
-            {
-              &quot;index&quot;: 4,
-              &quot;temperature&quot;: 23.1
-            }
-          ],
-          &quot;isLogged&quot;: 0,
-          &quot;type&quot;: 3,
-          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
-        }
-      ]
-    },
-    &quot;rx_metadata&quot;: [
-      {
-        &quot;gateway_ids&quot;: {
-          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
-          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
-        },
-        &quot;timestamp&quot;: 39945773,
-        &quot;rssi&quot;: -44,
-        &quot;channel_rssi&quot;: -44,
-        &quot;snr&quot;: 5
-      }
-    ]
-  }
-}
- 
+  <div class="preformatted" data-parent="0.19.0.call.7.16">16:10:46.968 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 664
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-71977DF7EE1308B&quot;,&quot;dev_eui&quot;:&quot;71977DF7EE1308B&quot;},&quot;received_at&quot;:&quot;2023-12-05T17:10:45&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+16:10:47.120 response time in milliseconds: 151
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 16:10:47 GMT
+
 </div>   
 
   
@@ -2865,50 +2279,6 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.7.17">
       <div class="step-ref passed">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">151</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.7.17">15:06:11.741 request:
-1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
-1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 666
-1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:06:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
-
-15:06:11.890 response time in milliseconds: 148
-1 &lt; 201
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.7.18">
-      <div class="step-ref passed">18</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -2954,7 +2324,7 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
         <span>*</span>&nbsp;<span>def sensorDataVerification = call read(&#39;classpath:resources/steps/task4b.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell failed">304</div>
+    <div class="time-cell failed">302</div>
   </div>
 
    
@@ -2963,12 +2333,12 @@ client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&
 
   
 
-  <div class="preformatted" data-parent="0.22">15:06:12.195 classpath:resources/controller.feature:22
+  <div class="preformatted" data-parent="0.22">16:10:47.424 classpath:resources/controller.feature:22
 * def sensorDataVerification = call read(&#39;classpath:resources/steps/task4b.feature&#39;)
-status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+status code was: 400, expected: 201, response time in milliseconds: 140, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
 [{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
 classpath:resources/steps/task4b.feature:30
-status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+status code was: 400, expected: 201, response time in milliseconds: 147, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
 [{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
 classpath:resources/steps/task4b.feature:30
 classpath:resources/controller.feature:22
@@ -2982,7 +2352,7 @@ classpath:resources/controller.feature:22
         <div class="step-indent"></div>
         <div class="step-cell passed">resources.steps.task4b</div>
       </div>
-      <div class="time-cell passed">295</div>
+      <div class="time-cell passed">292</div>
     </div>
     <div>
       <div><div>
@@ -3122,7 +2492,7 @@ classpath:resources/controller.feature:22
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">145</div>
+    <div class="time-cell passed">142</div>
   </div>
 
    
@@ -3131,22 +2501,22 @@ classpath:resources/controller.feature:22
 
   
 
-  <div class="preformatted" data-parent="0.22.0.call.1.29">15:06:11.898 request:
+  <div class="preformatted" data-parent="0.22.0.call.1.29">16:10:47.130 request:
 1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
 1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 219
+1 &gt; Content-Length: 218
 1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;useStandardizedTimestamps&quot;:false,&quot;from&quot;:&quot;2023-12-05T15:06:10&quot;,&quot;to&quot;:&quot;2023-12-05T16:06:10&quot;,&quot;loggers&quot;:[{&quot;loggerNumber&quot;:&quot;D6F0036F2867E14C&quot;,&quot;loggerType&quot;:&quot;MR_810T&quot;}],&quot;dataTypes&quot;:[&quot;TEMPERATURE&quot;],&quot;sensorCodes&quot;:[&quot;INTEGRATED&quot;]}
+{&quot;useStandardizedTimestamps&quot;:false,&quot;from&quot;:&quot;2023-12-05T16:10:45&quot;,&quot;to&quot;:&quot;2023-12-05T17:10:45&quot;,&quot;loggers&quot;:[{&quot;loggerNumber&quot;:&quot;71977DF7EE1308B&quot;,&quot;loggerType&quot;:&quot;MR_810T&quot;}],&quot;dataTypes&quot;:[&quot;TEMPERATURE&quot;],&quot;sensorCodes&quot;:[&quot;INTEGRATED&quot;]}
 
-15:06:12.042 response time in milliseconds: 143
+16:10:47.270 response time in milliseconds: 140
 1 &lt; 400
 1 &lt; Content-Length: 348
 1 &lt; Content-Type: application/json
-1 &lt; Date: Tue, 05 Dec 2023 15:06:12 GMT
+1 &lt; Date: Tue, 05 Dec 2023 16:10:47 GMT
 [{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
 </div>   
 
@@ -3176,40 +2546,12 @@ classpath:resources/controller.feature:22
 
   
 
-  <div class="preformatted" data-parent="0.22.0.call.1.30">15:06:12.043 classpath:resources/steps/task4b.feature:30
+  <div class="preformatted" data-parent="0.22.0.call.1.30">16:10:47.271 classpath:resources/steps/task4b.feature:30
 Then status 201
-status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+status code was: 400, expected: 201, response time in milliseconds: 140, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
 [{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
 classpath:resources/steps/task4b.feature:30
 </div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.22.0.call">
-    <div class="step-container" id="0.22.0.call.1.31">
-      <div class="step-ref skipped">31</div>
-      <div class="step-indent"></div>
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
 
   
 
@@ -3354,7 +2696,7 @@ classpath:resources/steps/task4b.feature:30
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">148</div>
+    <div class="time-cell passed">149</div>
   </div>
 
    
@@ -3363,22 +2705,22 @@ classpath:resources/steps/task4b.feature:30
 
   
 
-  <div class="preformatted" data-parent="0.22.0.call.2.29">15:06:12.047 request:
+  <div class="preformatted" data-parent="0.22.0.call.2.29">16:10:47.275 request:
 1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
 1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 228
+1 &gt; Content-Length: 227
 1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;useStandardizedTimestamps&quot;:false,&quot;from&quot;:&quot;2023-12-05T15:06:10&quot;,&quot;to&quot;:&quot;2023-12-05T16:06:10&quot;,&quot;loggers&quot;:[{&quot;loggerNumber&quot;:&quot;D6F0036F2867E14C&quot;,&quot;loggerType&quot;:&quot;MR_810T&quot;}],&quot;dataTypes&quot;:[&quot;BATTERY_VOLTAGE&quot;],&quot;sensorCodes&quot;:[&quot;BATTERY_VOLTAGE&quot;]}
+{&quot;useStandardizedTimestamps&quot;:false,&quot;from&quot;:&quot;2023-12-05T16:10:45&quot;,&quot;to&quot;:&quot;2023-12-05T17:10:45&quot;,&quot;loggers&quot;:[{&quot;loggerNumber&quot;:&quot;71977DF7EE1308B&quot;,&quot;loggerType&quot;:&quot;MR_810T&quot;}],&quot;dataTypes&quot;:[&quot;BATTERY_VOLTAGE&quot;],&quot;sensorCodes&quot;:[&quot;BATTERY_VOLTAGE&quot;]}
 
-15:06:12.193 response time in milliseconds: 146
+16:10:47.423 response time in milliseconds: 147
 1 &lt; 400
 1 &lt; Content-Length: 348
 1 &lt; Content-Type: application/json
-1 &lt; Date: Tue, 05 Dec 2023 15:06:12 GMT
+1 &lt; Date: Tue, 05 Dec 2023 16:10:47 GMT
 [{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
 </div>   
 
@@ -3408,9 +2750,9 @@ classpath:resources/steps/task4b.feature:30
 
   
 
-  <div class="preformatted" data-parent="0.22.0.call.2.30">15:06:12.194 classpath:resources/steps/task4b.feature:30
+  <div class="preformatted" data-parent="0.22.0.call.2.30">16:10:47.423 classpath:resources/steps/task4b.feature:30
 Then status 201
-status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+status code was: 400, expected: 201, response time in milliseconds: 147, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
 [{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
 classpath:resources/steps/task4b.feature:30
 </div>   
@@ -3419,64 +2761,8 @@ classpath:resources/steps/task4b.feature:30
 
 </div>
 </div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.22.0.call">
-    <div class="step-container" id="0.22.0.call.2.31">
-      <div class="step-ref skipped">31</div>
-      <div class="step-indent"></div>
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
     </div>    
   </div>
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.23">
-      <div class="step-ref skipped">23</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>print sensorDataVerification.response</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
 
 </div>
 </div>

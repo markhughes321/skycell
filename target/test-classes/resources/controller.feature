@@ -1,4 +1,4 @@
-@TaskFour @Controller
+@Task4 @Controller
 Feature: Controller File
 
 
