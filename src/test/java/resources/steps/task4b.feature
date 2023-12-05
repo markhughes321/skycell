@@ -7,6 +7,12 @@ Feature: Sensor Data Verification
   Background: 
     * url verificationUrl
     * header apiKey = apiKey
+    * def expectedResponse = read('classpath:resources/respones/sensorVerification.json')
+    * def dataTypes = "#regex (TEMPERATURE|BATTERY_VOLTAGE)"
+    * def sensorCodes = "#regex (CONNECTOR_1|BATTERY_VOLTAGE|INTEGRATED)"
+    * def positions = "#regex (UNSPECIFIED|INTERNAL)"
+    * def data = "#number"
+    * def dataEnteries =  {"t": "#regex \\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}", "d": "#[] data" }
 
   Scenario Outline: Sensor Data Verification
     Given path 'v1', 'logger', 'custom'
@@ -19,7 +25,7 @@ Feature: Sensor Data Verification
         loggers: [
           {
             loggerNumber: '#(loggerNumber)',
-            loggerType: "MR_810T"
+            loggerType: '#(loggerType)'
           }
         ],
         dataTypes: [<dataTypes>],
@@ -29,8 +35,10 @@ Feature: Sensor Data Verification
     When method post
     Then status 200
     And print response
-
+    And match response == expectedResponse
+    
     Examples:
       | dataTypes       | sensorCodes     |
       | TEMPERATURE     | INTEGRATED      |
       | BATTERY_VOLTAGE | BATTERY_VOLTAGE |
+      | TEMPERATURE     | CONNECTOR_1     |

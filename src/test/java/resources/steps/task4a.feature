@@ -7,21 +7,26 @@ Feature: Sensor Data Ingestion
   Background: 
     * url sensorUrl
     * header apiKey = apiKey
+    * def DateTimeFormatter = Java.type('resources.helpers.java.DateTimeFormatter')
+    * def timestampInSeconds = DateTimeFormatter.getCurrentTimestampInSeconds()
     * def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')
     
-  Scenario Outline: Sensor Data Ingestion
+  Scenario Outline: Sensor Data Ingestion <times>
     Given path 'v1', 'lora', 'uplink'
     And set sensorIngestion.received_at = <recievedAt>
     And request sensorIngestion
     When method post
     Then status 201
+    And print response
+    * print sensorIngestion
+
   
     Examples:
-      | recievedAt               |
-      | currentDateTime          |
-      | tenMinuteIntervals[0]    |
-      | tenMinuteIntervals[1]    |
-      | tenMinuteIntervals[2]    |
-      | tenMinuteIntervals[3]    |
-      | tenMinuteIntervals[4]    |
-      | tenMinuteIntervals[5]    |
+      | recievedAt               | index  |
+      | currentDateTime          | 1      |
+      | tenMinuteIntervals[0]    | 2      |
+      | tenMinuteIntervals[1]    | 2      |
+      | tenMinuteIntervals[2]    | 3      |
+      | tenMinuteIntervals[3]    | 5      |
+      | tenMinuteIntervals[4]    | 6      |
+      | tenMinuteIntervals[5]    | 7      |

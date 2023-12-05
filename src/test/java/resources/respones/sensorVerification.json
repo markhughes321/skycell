@@ -1,0 +1,9 @@
+{
+  "serialNumber": null,
+  "loggerNumbers": ["#(loggerNumber)"],
+  "loggerTypes": ["MR_812P"],
+  "dataTypes": "#[] dataTypes",
+  "positions": "#[] positions",
+  "sensorCodes": "#[] sensorCodes",
+  "data": "#[] dataEnteries"
+}

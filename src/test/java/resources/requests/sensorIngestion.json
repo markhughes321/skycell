@@ -11,7 +11,7 @@
           "amount": 1,
           "dataPoints": [
             {
-              "index": 10,
+              "index": "#(index)",
               "temperature": 23.1
             }
           ],
@@ -23,7 +23,7 @@
           "amount": 1,
           "dataPoints": [
             {
-              "index": 20,
+              "index": "#(index)",
               "voltage": 1.3
             }
           ],
@@ -35,8 +35,8 @@
           "amount": 1,
           "dataPoints": [
             {
-              "index": 4,
-              "temperature": 23.1
+              "index": "#(index)",
+              "temperature": 22
             }
           ],
           "isLogged": 0,
@@ -51,7 +51,7 @@
           "gateway_id": "9c65f94334d8",
           "eui": "9C65F9FFFE4334D8"
         },
-        "timestamp": 39945773,
+        "timestamp": "#(timestampInSeconds)",
         "rssi": -44,
         "channel_rssi": -44,
         "snr": 5

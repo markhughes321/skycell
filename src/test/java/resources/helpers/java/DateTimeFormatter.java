@@ -31,4 +31,8 @@ public class DateTimeFormatter {
 
         return intervals;
     }
+
+    public static long getCurrentTimestampInSeconds() {
+        return System.currentTimeMillis() / 1000;
+    }
 }
