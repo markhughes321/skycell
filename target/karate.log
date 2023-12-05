@@ -1,0 +1,1293 @@
+15:05:03.748 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Controller
+15:05:04.093 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:05:04.096 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+15:05:04.524 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:05:04.711 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://keycloak.dev.skycell.ch/realms/skycell/protocol/openid-connect/token
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 100
+1 > Host: keycloak.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+client_id=webapp&grant_type=password&username=qa_interview%40skycell.ch&password=Qa_interview2023%21
+
+15:05:05.033 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 321
+1 < 200
+1 < Cache-Control: no-store
+1 < Content-Length: 3773
+1 < Content-Type: application/json
+1 < Pragma: no-cache
+1 < Referrer-Policy: no-referrer
+1 < Set-Cookie: KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/skycell/; Secure; HttpOnly
+1 < Set-Cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/skycell/; Secure; HttpOnly
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Xss-Protection: 1; mode=block
+1 < Date: Tue, 05 Dec 2023 15:05:05 GMT
+{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMdXpuc3hrWS15anNLdnFicVotc1ZPS1lWT2FhT1Z5UUFsSTdoSEllWTE0In0.eyJleHAiOjE3MDE4MzkxMDUsImlhdCI6MTcwMTc4ODcwNSwianRpIjoiMDVlMzQ3ODUtMDNkZC00NzNiLTg1Y2MtY2IwM2ZlZGYyZDdjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6WyJ3ZWJhcHAiLCJkb2N1bWVudC1nZW5lcmF0b3ItbG9jYWwiLCJhY2NvdW50Il0sInN1YiI6ImMwNTZlNTVhLTQ1ZWMtNGRjNi1hMjFmLTMwN2YyN2IyODU3MiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYmFwcCIsInNlc3Npb25fc3RhdGUiOiI4ZWVhYjE0Zi03ODg0LTRlNGItYjg2My02YmUwNmE0ZGEzZTYiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9za3luZXQucG9jLnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3luZXQuZGVtby5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdDo2MDA2IiwiaHR0cHM6Ly9za3ljZW50ZXIuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9zZWN1cmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lwb3J0YWwuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGwtYWcuZ2l0aHViLmlvIiwiaHR0cDovL2xvY2FsaG9zdDo4MTAwIiwiaHR0cDovL2xvY2FsaG9zdDo2MDYwIiwiaHR0cHM6Ly9za3ltaW5kLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW5ldC50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbnRlci50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NlY3VyZS5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2VjdXJlLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5c2hpcG5ldy5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5bmV0LmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnByZS5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLnBvYy5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdCIsImh0dHBzOi8vc2t5c2hpcC5kZW1vLnNreWNlbGwuY2giLCJodHRwOi8vbG9jYWxob3N0OjMwMDEiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL3NreWNvcmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnBvYy5za3ljZWxsLmNoIiwiaHR0cHM6Ly9kZW1vcGFydG5lcnBvcnRhbC4zc2NhcHBzLmNvbSIsImh0dHBzOi8vc2t5Y2VudGVyLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGxwYXJ0bmVycG9ydGFsLjNzY2FwcHMuY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6IndlYmFwcCBlbWFpbCBwcm9maWxlIGRvY3VtZW50LWdlbmVyYXRvciIsInNpZCI6IjhlZWFiMTRmLTc4ODQtNGU0Yi1iODYzLTZiZTA2YTRkYTNlNiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUUEgSW50ZXJ2aWV3IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2giLCJnaXZlbl9uYW1lIjoiUUEiLCJmYW1pbHlfbmFtZSI6IkludGVydmlldyIsImVtYWlsIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2gifQ.Yv_LVCIARfK0f1RcdT62C6eo1NpFWFSAylkhq-_0pFZtVm8I7e0IqcX8T7ofhBhOVSVyiFWdU1Sd16e7BwXWaglK6SZ-18Kmso7TtwTU3VoNRYLOxHfi5J_km5S0ko_JmTJSi4dAQVrWMZ0z-NI_iKPYzxZpNd8qAp7TpktVcrEfavDG0CnYGG3qsnji8fBntRItahg6dMdtdfwY7W2M_jZc02zz8JRRh-G446lbP-rEcPL0tzlDokiIXHiTYsGIdBEMQhfj8viAr0-M71J93XPJaMeN633hadgnz_F6rRtQpG5xByMKG12ArHRGqvjzxi6JeSdiPPelVCbPiA3eHg","expires_in":50400,"refresh_expires_in":14400,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1N2UxMGU1Yi1hMjg3LTQ1ZWItYWE5My0wOWE3MTI0OGY3Y2UifQ.eyJleHAiOjE3MDE4MDMxMDUsImlhdCI6MTcwMTc4ODcwNSwianRpIjoiN2ZkM2RlODQtMzY1YS00YjU0LTkyZDItMWI5N2EwZGM1NjI5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6Imh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2gvcmVhbG1zL3NreWNlbGwiLCJzdWIiOiJjMDU2ZTU1YS00NWVjLTRkYzYtYTIxZi0zMDdmMjdiMjg1NzIiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoid2ViYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjhlZWFiMTRmLTc4ODQtNGU0Yi1iODYzLTZiZTA2YTRkYTNlNiIsInNjb3BlIjoid2ViYXBwIGVtYWlsIHByb2ZpbGUgZG9jdW1lbnQtZ2VuZXJhdG9yIiwic2lkIjoiOGVlYWIxNGYtNzg4NC00ZTRiLWI4NjMtNmJlMDZhNGRhM2U2In0.9eLZOKIGZZ8sPMAN4wFgxtpkoMfHAn6J-holD8TvLyw","token_type":"Bearer","not-before-policy":1680026173,"session_state":"8eeab14f-7884-4e4b-b863-6be06a4da3e6","scope":"webapp email profile document-generator"}
+15:05:05.067 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T15:05:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:05.070 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T15:05:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:05.243 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 172
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:05 GMT
+
+15:05:05.251 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T15:15:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:05.253 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T15:15:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:05.406 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 153
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:05 GMT
+
+15:05:05.414 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T15:25:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:05.415 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T15:25:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:05.568 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 153
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:05 GMT
+
+15:05:05.577 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T15:35:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:05.578 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T15:35:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:05.730 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 152
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:05 GMT
+
+15:05:05.736 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T15:45:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:05.736 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T15:45:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:05.890 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 153
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:05 GMT
+
+15:05:05.897 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T15:55:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:05.899 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T15:55:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:06.059 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 160
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:06 GMT
+
+15:05:06.067 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-87922C73F0FA0B72",
+    "dev_eui": "87922C73F0FA0B72"
+  },
+  "received_at": "2023-12-05T16:05:04",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:05:06.068 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-87922C73F0FA0B72","dev_eui":"87922C73F0FA0B72"},"received_at":"2023-12-05T16:05:04","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:05:06.223 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 154
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:05:06 GMT
+
+15:05:06.232 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 219
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"useStandardizedTimestamps":false,"from":"2023-12-05T15:05:04","to":"2023-12-05T16:05:04","loggers":[{"loggerNumber":"87922C73F0FA0B72","loggerType":"MR_810T"}],"dataTypes":["TEMPERATURE"],"sensorCodes":["INTEGRATED"]}
+
+15:05:06.377 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 145
+1 < 400
+1 < Content-Length: 348
+1 < Content-Type: application/json
+1 < Date: Tue, 05 Dec 2023 15:05:06 GMT
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+15:05:06.378 [pool-1-thread-1] ERROR com.intuit.karate - classpath:resources/steps/task4b.feature:30
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 145, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+15:05:06.384 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 228
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"useStandardizedTimestamps":false,"from":"2023-12-05T15:05:04","to":"2023-12-05T16:05:04","loggers":[{"loggerNumber":"87922C73F0FA0B72","loggerType":"MR_810T"}],"dataTypes":["BATTERY_VOLTAGE"],"sensorCodes":["BATTERY_VOLTAGE"]}
+
+15:05:06.532 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 148
+1 < 400
+1 < Content-Length: 348
+1 < Content-Type: application/json
+1 < Date: Tue, 05 Dec 2023 15:05:06 GMT
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+15:05:06.532 [pool-1-thread-1] ERROR com.intuit.karate - classpath:resources/steps/task4b.feature:30
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 148, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+15:05:06.532 [pool-1-thread-1] ERROR com.intuit.karate - classpath:resources/controller.feature:22
+* def sensorDataVerification = call read('classpath:resources/steps/task4b.feature')
+status code was: 400, expected: 201, response time in milliseconds: 145, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+status code was: 400, expected: 201, response time in milliseconds: 148, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+classpath:resources/controller.feature:22
+15:05:06.904 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 5 (4 remaining) classpath:resources/controller.feature
+15:06:09.830 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:06:09.834 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1701788769833
+15:06:09.836 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+15:06:10.272 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+15:06:10.272 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:06:10.272 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+15:06:10.434 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://keycloak.dev.skycell.ch/realms/skycell/protocol/openid-connect/token
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 100
+1 > Host: keycloak.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+client_id=webapp&grant_type=password&username=qa_interview%40skycell.ch&password=Qa_interview2023%21
+
+15:06:10.434 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/configuration
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 77
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"loggerNumber":"B8857FD77AA8CE28","loggerType":"MR_810T","baseInterval":600}
+
+15:06:10.434 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/configuration
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 77
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"loggerNumber":"6D021556F7507325","loggerType":"MR_812P","baseInterval":600}
+
+15:06:10.694 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 259
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:10 GMT
+
+15:06:10.725 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 290
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:10 GMT
+
+15:06:10.760 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 326
+1 < 200
+1 < Cache-Control: no-store
+1 < Content-Length: 3773
+1 < Content-Type: application/json
+1 < Pragma: no-cache
+1 < Referrer-Policy: no-referrer
+1 < Set-Cookie: KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/skycell/; Secure; HttpOnly
+1 < Set-Cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/skycell/; Secure; HttpOnly
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Xss-Protection: 1; mode=block
+1 < Date: Tue, 05 Dec 2023 15:06:10 GMT
+{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMdXpuc3hrWS15anNLdnFicVotc1ZPS1lWT2FhT1Z5UUFsSTdoSEllWTE0In0.eyJleHAiOjE3MDE4MzkxNzAsImlhdCI6MTcwMTc4ODc3MCwianRpIjoiYWEzZWQyMzMtYzVlNS00MDUzLWFmYzMtMzc5NDc2ZGEyNTc3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6WyJ3ZWJhcHAiLCJkb2N1bWVudC1nZW5lcmF0b3ItbG9jYWwiLCJhY2NvdW50Il0sInN1YiI6ImMwNTZlNTVhLTQ1ZWMtNGRjNi1hMjFmLTMwN2YyN2IyODU3MiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYmFwcCIsInNlc3Npb25fc3RhdGUiOiIzYmYwYmMyOC03NzAzLTQ2OTMtOGQ3ZC1mMzYyM2NjMzZiNzYiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9za3luZXQucG9jLnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3luZXQuZGVtby5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdDo2MDA2IiwiaHR0cHM6Ly9za3ljZW50ZXIuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9zZWN1cmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lwb3J0YWwuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGwtYWcuZ2l0aHViLmlvIiwiaHR0cDovL2xvY2FsaG9zdDo4MTAwIiwiaHR0cDovL2xvY2FsaG9zdDo2MDYwIiwiaHR0cHM6Ly9za3ltaW5kLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW5ldC50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbnRlci50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NlY3VyZS5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2VjdXJlLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5c2hpcG5ldy5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5bmV0LmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnByZS5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLnBvYy5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdCIsImh0dHBzOi8vc2t5c2hpcC5kZW1vLnNreWNlbGwuY2giLCJodHRwOi8vbG9jYWxob3N0OjMwMDEiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL3NreWNvcmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnBvYy5za3ljZWxsLmNoIiwiaHR0cHM6Ly9kZW1vcGFydG5lcnBvcnRhbC4zc2NhcHBzLmNvbSIsImh0dHBzOi8vc2t5Y2VudGVyLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGxwYXJ0bmVycG9ydGFsLjNzY2FwcHMuY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6IndlYmFwcCBlbWFpbCBwcm9maWxlIGRvY3VtZW50LWdlbmVyYXRvciIsInNpZCI6IjNiZjBiYzI4LTc3MDMtNDY5My04ZDdkLWYzNjIzY2MzNmI3NiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUUEgSW50ZXJ2aWV3IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2giLCJnaXZlbl9uYW1lIjoiUUEiLCJmYW1pbHlfbmFtZSI6IkludGVydmlldyIsImVtYWlsIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2gifQ.hSYILA9Li-pZKyv3Fz2BMpQU7e6h-eghlDLIfHvYPOPF04izpILrGkhdsYTkB5xd6Bb3I1cnL4VoO9ggxnWvcWv5-ky7CRf7fzdmHABr_cVHPoeyu8JPNujgjIW7xW1QnFUQyVbCBrxZ5EURxwocWaIpRbQszK4fN0rQWu4LO1bwSRnbzXMy2N1aQn_RNCPwwRw2_NZmeYHPxFxx_bvnS5V8j8t52mglhqbLnhyf8kOqwt642eKcqSa0WiUp6fODKk2vIpZ9bMcenU0Gc70zIDFp0QcsyNaX8ZmCPm7jWI3Qod-MQo1_iETGeHeoYwiiFUsN43UQwdbcgngSQ6BzNg","expires_in":50400,"refresh_expires_in":14400,"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1N2UxMGU1Yi1hMjg3LTQ1ZWItYWE5My0wOWE3MTI0OGY3Y2UifQ.eyJleHAiOjE3MDE4MDMxNzAsImlhdCI6MTcwMTc4ODc3MCwianRpIjoiZmY5MTM3ZTQtMmZjNS00NWM3LTgxMTEtNjdlMzk3ZDQxMDM5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6Imh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2gvcmVhbG1zL3NreWNlbGwiLCJzdWIiOiJjMDU2ZTU1YS00NWVjLTRkYzYtYTIxZi0zMDdmMjdiMjg1NzIiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoid2ViYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjNiZjBiYzI4LTc3MDMtNDY5My04ZDdkLWYzNjIzY2MzNmI3NiIsInNjb3BlIjoid2ViYXBwIGVtYWlsIHByb2ZpbGUgZG9jdW1lbnQtZ2VuZXJhdG9yIiwic2lkIjoiM2JmMGJjMjgtNzcwMy00NjkzLThkN2QtZjM2MjNjYzM2Yjc2In0.Tl1ess186L9fRSVNzdqSgFYNDRYQCGtBt9MB836iAlc","token_type":"Bearer","not-before-policy":1680026173,"session_state":"3bf0bc28-7703-4693-8d7d-f3623cc36b76","scope":"webapp email profile document-generator"}
+15:06:10.782 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T15:06:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:10.784 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T15:06:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:10.936 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 152
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:10 GMT
+
+15:06:10.944 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T15:16:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:10.945 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T15:16:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:11.096 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 151
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+15:06:11.102 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T15:26:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:11.103 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T15:26:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:11.254 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 151
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+15:06:11.260 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T15:36:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:11.261 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T15:36:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:11.411 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 150
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+15:06:11.417 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T15:46:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:11.418 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T15:46:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:11.571 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 153
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+15:06:11.579 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T15:56:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:11.581 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T15:56:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:11.729 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 148
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+15:06:11.739 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "end_device_ids": {
+    "device_id": "eui-D6F0036F2867E14C",
+    "dev_eui": "D6F0036F2867E14C"
+  },
+  "received_at": "2023-12-05T16:06:10",
+  "uplink_message": {
+    "decoded_payload": {
+      "sensorData": [
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 10,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 0,
+          "typeText": "Internal Temperature Sensor"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 20,
+              "voltage": 1.3
+            }
+          ],
+          "isLogged": 0,
+          "type": 1,
+          "typeText": "Battery voltage"
+        },
+        {
+          "amount": 1,
+          "dataPoints": [
+            {
+              "index": 4,
+              "temperature": 23.1
+            }
+          ],
+          "isLogged": 0,
+          "type": 3,
+          "typeText": "RTD Temperature Sensor"
+        }
+      ]
+    },
+    "rx_metadata": [
+      {
+        "gateway_ids": {
+          "gateway_id": "9c65f94334d8",
+          "eui": "9C65F9FFFE4334D8"
+        },
+        "timestamp": 39945773,
+        "rssi": -44,
+        "channel_rssi": -44,
+        "snr": 5
+      }
+    ]
+  }
+}
+ 
+15:06:11.741 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 666
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"end_device_ids":{"device_id":"eui-D6F0036F2867E14C","dev_eui":"D6F0036F2867E14C"},"received_at":"2023-12-05T16:06:10","uplink_message":{"decoded_payload":{"sensorData":[{"amount":1,"dataPoints":[{"index":10,"temperature":23.1}],"isLogged":0,"type":0,"typeText":"Internal Temperature Sensor"},{"amount":1,"dataPoints":[{"index":20,"voltage":1.3}],"isLogged":0,"type":1,"typeText":"Battery voltage"},{"amount":1,"dataPoints":[{"index":4,"temperature":23.1}],"isLogged":0,"type":3,"typeText":"RTD Temperature Sensor"}]},"rx_metadata":[{"gateway_ids":{"gateway_id":"9c65f94334d8","eui":"9C65F9FFFE4334D8"},"timestamp":39945773,"rssi":-44,"channel_rssi":-44,"snr":5}]}}
+
+15:06:11.889 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 148
+1 < 201
+1 < Content-Length: 0
+1 < Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+15:06:11.898 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 219
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"useStandardizedTimestamps":false,"from":"2023-12-05T15:06:10","to":"2023-12-05T16:06:10","loggers":[{"loggerNumber":"D6F0036F2867E14C","loggerType":"MR_810T"}],"dataTypes":["TEMPERATURE"],"sensorCodes":["INTEGRATED"]}
+
+15:06:12.041 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 143
+1 < 400
+1 < Content-Length: 348
+1 < Content-Type: application/json
+1 < Date: Tue, 05 Dec 2023 15:06:12 GMT
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+15:06:12.042 [pool-1-thread-1] ERROR com.intuit.karate - classpath:resources/steps/task4b.feature:30
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+15:06:12.047 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 > apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 228
+1 > Host: sensor-data-ingestion.dev.skycell.ch
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"useStandardizedTimestamps":false,"from":"2023-12-05T15:06:10","to":"2023-12-05T16:06:10","loggers":[{"loggerNumber":"D6F0036F2867E14C","loggerType":"MR_810T"}],"dataTypes":["BATTERY_VOLTAGE"],"sensorCodes":["BATTERY_VOLTAGE"]}
+
+15:06:12.193 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 146
+1 < 400
+1 < Content-Length: 348
+1 < Content-Type: application/json
+1 < Date: Tue, 05 Dec 2023 15:06:12 GMT
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+15:06:12.194 [pool-1-thread-1] ERROR com.intuit.karate - classpath:resources/steps/task4b.feature:30
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+15:06:12.194 [pool-1-thread-1] ERROR com.intuit.karate - classpath:resources/controller.feature:22
+* def sensorDataVerification = call read('classpath:resources/steps/task4b.feature')
+status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+classpath:resources/controller.feature:22
+15:06:12.569 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 5 (4 remaining) classpath:resources/controller.feature
+15:06:12.637 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:resources/steps/task3.feature

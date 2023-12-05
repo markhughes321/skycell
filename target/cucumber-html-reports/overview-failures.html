@@ -1,0 +1,3631 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Template Project</td>
+      <td>05 Dec 2023, 15:06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+      <p>The following summary displays scenarios that failed.</p>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="elements">
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_221381325.html">resources/controller.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4060328686.html">@Task4</a>
+       <a href="report-tag_1442639867.html">@Controller</a>
+</div>
+
+
+  <span class="lead-duration duration">3.751</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def authenticate = call read('classpath:resources/steps/task2.feature')</span>
+
+  <span class="lead-duration duration">0.468</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">resources/steps/task2.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url authUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def credentials = { client_id: 'webapp', grant_type: 'password', username: 'qa_interview@skycell.ch', password: 'Qa_interview2023!' }</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def expectedResponse = read('classpath:resources/respones/auth.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'realms', 'skycell', 'protocol', 'openid-connect', 'token'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">form fields credentials</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.404</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:06:10.434 request:
+1 &gt; POST https://keycloak.dev.skycell.ch/realms/skycell/protocol/openid-connect/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 100
+1 &gt; Host: keycloak.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+client_id=webapp&amp;grant_type=password&amp;username=qa_interview%40skycell.ch&amp;password=Qa_interview2023%21
+
+15:06:10.760 response time in milliseconds: 326
+1 &lt; 200
+1 &lt; Cache-Control: no-store
+1 &lt; Content-Length: 3773
+1 &lt; Content-Type: application/json
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Set-Cookie: KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/skycell/; Secure; HttpOnly
+1 &lt; Set-Cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/realms/skycell/; Secure; HttpOnly
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Date: Tue, 05 Dec 2023 15:06:10 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJMdXpuc3hrWS15anNLdnFicVotc1ZPS1lWT2FhT1Z5UUFsSTdoSEllWTE0In0.eyJleHAiOjE3MDE4MzkxNzAsImlhdCI6MTcwMTc4ODc3MCwianRpIjoiYWEzZWQyMzMtYzVlNS00MDUzLWFmYzMtMzc5NDc2ZGEyNTc3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6WyJ3ZWJhcHAiLCJkb2N1bWVudC1nZW5lcmF0b3ItbG9jYWwiLCJhY2NvdW50Il0sInN1YiI6ImMwNTZlNTVhLTQ1ZWMtNGRjNi1hMjFmLTMwN2YyN2IyODU3MiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYmFwcCIsInNlc3Npb25fc3RhdGUiOiIzYmYwYmMyOC03NzAzLTQ2OTMtOGQ3ZC1mMzYyM2NjMzZiNzYiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9za3luZXQucG9jLnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3luZXQuZGVtby5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdDo2MDA2IiwiaHR0cHM6Ly9za3ljZW50ZXIuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9zZWN1cmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lwb3J0YWwuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW1pbmQuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGwtYWcuZ2l0aHViLmlvIiwiaHR0cDovL2xvY2FsaG9zdDo4MTAwIiwiaHR0cDovL2xvY2FsaG9zdDo2MDYwIiwiaHR0cHM6Ly9za3ltaW5kLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCIsImh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2giLCJodHRwczovL3NreW5ldC50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbnRlci50ZXN0LnNreWNlbGwuY2giLCJodHRwczovL3NlY3VyZS5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2VjdXJlLnRlc3Quc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5c2hpcG5ldy5kZXYuc2t5Y2VsbC5jaCIsImh0dHBzOi8vc2t5bmV0LmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnByZS5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLnBvYy5za3ljZWxsLmNoIiwiaHR0cDovL2xvY2FsaG9zdCIsImh0dHBzOi8vc2t5c2hpcC5kZW1vLnNreWNlbGwuY2giLCJodHRwOi8vbG9jYWxob3N0OjMwMDEiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJodHRwczovL3NreWNvcmUuZGVtby5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ltaW5kLnBvYy5za3ljZWxsLmNoIiwiaHR0cHM6Ly9kZW1vcGFydG5lcnBvcnRhbC4zc2NhcHBzLmNvbSIsImh0dHBzOi8vc2t5Y2VudGVyLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3ljb3JlLmRldi5za3ljZWxsLmNoIiwiaHR0cHM6Ly9za3lzaGlwLnNreWNlbGwuY2giLCJodHRwczovL3NreWNlbGxwYXJ0bmVycG9ydGFsLjNzY2FwcHMuY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6IndlYmFwcCBlbWFpbCBwcm9maWxlIGRvY3VtZW50LWdlbmVyYXRvciIsInNpZCI6IjNiZjBiYzI4LTc3MDMtNDY5My04ZDdkLWYzNjIzY2MzNmI3NiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUUEgSW50ZXJ2aWV3IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2giLCJnaXZlbl9uYW1lIjoiUUEiLCJmYW1pbHlfbmFtZSI6IkludGVydmlldyIsImVtYWlsIjoicWFfaW50ZXJ2aWV3QHNreWNlbGwuY2gifQ.hSYILA9Li-pZKyv3Fz2BMpQU7e6h-eghlDLIfHvYPOPF04izpILrGkhdsYTkB5xd6Bb3I1cnL4VoO9ggxnWvcWv5-ky7CRf7fzdmHABr_cVHPoeyu8JPNujgjIW7xW1QnFUQyVbCBrxZ5EURxwocWaIpRbQszK4fN0rQWu4LO1bwSRnbzXMy2N1aQn_RNCPwwRw2_NZmeYHPxFxx_bvnS5V8j8t52mglhqbLnhyf8kOqwt642eKcqSa0WiUp6fODKk2vIpZ9bMcenU0Gc70zIDFp0QcsyNaX8ZmCPm7jWI3Qod-MQo1_iETGeHeoYwiiFUsN43UQwdbcgngSQ6BzNg&quot;,&quot;expires_in&quot;:50400,&quot;refresh_expires_in&quot;:14400,&quot;refresh_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1N2UxMGU1Yi1hMjg3LTQ1ZWItYWE5My0wOWE3MTI0OGY3Y2UifQ.eyJleHAiOjE3MDE4MDMxNzAsImlhdCI6MTcwMTc4ODc3MCwianRpIjoiZmY5MTM3ZTQtMmZjNS00NWM3LTgxMTEtNjdlMzk3ZDQxMDM5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5kZXYuc2t5Y2VsbC5jaC9yZWFsbXMvc2t5Y2VsbCIsImF1ZCI6Imh0dHBzOi8va2V5Y2xvYWsuZGV2LnNreWNlbGwuY2gvcmVhbG1zL3NreWNlbGwiLCJzdWIiOiJjMDU2ZTU1YS00NWVjLTRkYzYtYTIxZi0zMDdmMjdiMjg1NzIiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoid2ViYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjNiZjBiYzI4LTc3MDMtNDY5My04ZDdkLWYzNjIzY2MzNmI3NiIsInNjb3BlIjoid2ViYXBwIGVtYWlsIHByb2ZpbGUgZG9jdW1lbnQtZ2VuZXJhdG9yIiwic2lkIjoiM2JmMGJjMjgtNzcwMy00NjkzLThkN2QtZjM2MjNjYzM2Yjc2In0.Tl1ess186L9fRSVNzdqSgFYNDRYQCGtBt9MB836iAlc&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;not-before-policy&quot;:1680026173,&quot;session_state&quot;:&quot;3bf0bc28-7703-4693-8d7d-f3623cc36b76&quot;,&quot;scope&quot;:&quot;webapp email profile document-generator&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response == expectedResponse</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def authToken = authenticate.response.access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def sensorDataIngestion = call read('classpath:resources/steps/task4a.feature')</span>
+
+  <span class="lead-duration duration">1.124</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">resources/steps/task4a.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = currentDateTime</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>15:06:10.783 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T15:06:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.153</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>15:06:10.784 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:06:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:10.936 response time in milliseconds: 152
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:10 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = tenMinuteIntervals[0]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:06:10.944 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T15:16:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.152</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:06:10.945 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:16:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:11.096 response time in milliseconds: 151
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = tenMinuteIntervals[1]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>15:06:11.102 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T15:26:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.152</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>15:06:11.103 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:26:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:11.254 response time in milliseconds: 151
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = tenMinuteIntervals[2]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>15:06:11.260 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T15:36:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.151</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>15:06:11.261 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:36:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:11.411 response time in milliseconds: 150
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = tenMinuteIntervals[3]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>15:06:11.417 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T15:46:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.154</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>15:06:11.418 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:46:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:11.571 response time in milliseconds: 153
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = tenMinuteIntervals[4]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>15:06:11.580 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T15:56:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.150</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>15:06:11.581 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T15:56:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:11.730 response time in milliseconds: 148
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">set sensorIngestion.received_at = tenMinuteIntervals[5]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print sensorIngestion</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>15:06:11.740 [print] {
+  &quot;end_device_ids&quot;: {
+    &quot;device_id&quot;: &quot;eui-D6F0036F2867E14C&quot;,
+    &quot;dev_eui&quot;: &quot;D6F0036F2867E14C&quot;
+  },
+  &quot;received_at&quot;: &quot;2023-12-05T16:06:10&quot;,
+  &quot;uplink_message&quot;: {
+    &quot;decoded_payload&quot;: {
+      &quot;sensorData&quot;: [
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 10,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 0,
+          &quot;typeText&quot;: &quot;Internal Temperature Sensor&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 20,
+              &quot;voltage&quot;: 1.3
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 1,
+          &quot;typeText&quot;: &quot;Battery voltage&quot;
+        },
+        {
+          &quot;amount&quot;: 1,
+          &quot;dataPoints&quot;: [
+            {
+              &quot;index&quot;: 4,
+              &quot;temperature&quot;: 23.1
+            }
+          ],
+          &quot;isLogged&quot;: 0,
+          &quot;type&quot;: 3,
+          &quot;typeText&quot;: &quot;RTD Temperature Sensor&quot;
+        }
+      ]
+    },
+    &quot;rx_metadata&quot;: [
+      {
+        &quot;gateway_ids&quot;: {
+          &quot;gateway_id&quot;: &quot;9c65f94334d8&quot;,
+          &quot;eui&quot;: &quot;9C65F9FFFE4334D8&quot;
+        },
+        &quot;timestamp&quot;: 39945773,
+        &quot;rssi&quot;: -44,
+        &quot;channel_rssi&quot;: -44,
+        &quot;snr&quot;: 5
+      }
+    ]
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.150</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>15:06:11.741 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 666
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;end_device_ids&quot;:{&quot;device_id&quot;:&quot;eui-D6F0036F2867E14C&quot;,&quot;dev_eui&quot;:&quot;D6F0036F2867E14C&quot;},&quot;received_at&quot;:&quot;2023-12-05T16:06:10&quot;,&quot;uplink_message&quot;:{&quot;decoded_payload&quot;:{&quot;sensorData&quot;:[{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:10,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:0,&quot;typeText&quot;:&quot;Internal Temperature Sensor&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:20,&quot;voltage&quot;:1.3}],&quot;isLogged&quot;:0,&quot;type&quot;:1,&quot;typeText&quot;:&quot;Battery voltage&quot;},{&quot;amount&quot;:1,&quot;dataPoints&quot;:[{&quot;index&quot;:4,&quot;temperature&quot;:23.1}],&quot;isLogged&quot;:0,&quot;type&quot;:3,&quot;typeText&quot;:&quot;RTD Temperature Sensor&quot;}]},&quot;rx_metadata&quot;:[{&quot;gateway_ids&quot;:{&quot;gateway_id&quot;:&quot;9c65f94334d8&quot;,&quot;eui&quot;:&quot;9C65F9FFFE4334D8&quot;},&quot;timestamp&quot;:39945773,&quot;rssi&quot;:-44,&quot;channel_rssi&quot;:-44,&quot;snr&quot;:5}]}}
+
+15:06:11.890 response time in milliseconds: 148
+1 &lt; 201
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 05 Dec 2023 15:06:11 GMT
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def sensorDataVerification = call read('classpath:resources/steps/task4b.feature')</span>
+
+  <span class="lead-duration duration">0.303</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>status</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30
+status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30
+classpath:resources/controller.feature:22</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>15:06:12.195 classpath:resources/controller.feature:22
+* def sensorDataVerification = call read('classpath:resources/steps/task4b.feature')
+status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30
+status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30
+classpath:resources/controller.feature:22
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">resources/steps/task4b.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>{
+  useStandardizedTimestamps: false,
+  from: '#(currentDateTime)',
+  to: '#(dateTimeOneHourAhead)',
+  loggers: [
+    {
+      loggerNumber: '#(loggerNumber)',
+      loggerType: &quot;MR_810T&quot;
+    }
+  ],
+  dataTypes: [TEMPERATURE],
+  sensorCodes: [INTEGRATED]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.145</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>15:06:11.898 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 219
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;useStandardizedTimestamps&quot;:false,&quot;from&quot;:&quot;2023-12-05T15:06:10&quot;,&quot;to&quot;:&quot;2023-12-05T16:06:10&quot;,&quot;loggers&quot;:[{&quot;loggerNumber&quot;:&quot;D6F0036F2867E14C&quot;,&quot;loggerType&quot;:&quot;MR_810T&quot;}],&quot;dataTypes&quot;:[&quot;TEMPERATURE&quot;],&quot;sensorCodes&quot;:[&quot;INTEGRATED&quot;]}
+
+15:06:12.042 response time in milliseconds: 143
+1 &lt; 400
+1 &lt; Content-Length: 348
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 05 Dec 2023 15:06:12 GMT
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then failed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
+          <a>status</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>15:06:12.043 classpath:resources/steps/task4b.feature:30
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url sensorUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header apiKey = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'v1', 'lora', 'uplink'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>{
+  useStandardizedTimestamps: false,
+  from: '#(currentDateTime)',
+  to: '#(dateTimeOneHourAhead)',
+  loggers: [
+    {
+      loggerNumber: '#(loggerNumber)',
+      loggerType: &quot;MR_810T&quot;
+    }
+  ],
+  dataTypes: [BATTERY_VOLTAGE],
+  sensorCodes: [BATTERY_VOLTAGE]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.147</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>15:06:12.047 request:
+1 &gt; POST https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink
+1 &gt; apiKey: NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 228
+1 &gt; Host: sensor-data-ingestion.dev.skycell.ch
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;useStandardizedTimestamps&quot;:false,&quot;from&quot;:&quot;2023-12-05T15:06:10&quot;,&quot;to&quot;:&quot;2023-12-05T16:06:10&quot;,&quot;loggers&quot;:[{&quot;loggerNumber&quot;:&quot;D6F0036F2867E14C&quot;,&quot;loggerType&quot;:&quot;MR_810T&quot;}],&quot;dataTypes&quot;:[&quot;BATTERY_VOLTAGE&quot;],&quot;sensorCodes&quot;:[&quot;BATTERY_VOLTAGE&quot;]}
+
+15:06:12.193 response time in milliseconds: 146
+1 &lt; 400
+1 &lt; Content-Length: 348
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 05 Dec 2023 15:06:12 GMT
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then failed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-26">
+          <a>status</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>15:06:12.194 classpath:resources/steps/task4b.feature:30
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{&quot;message&quot;:&quot;Impossible to deserialize message&quot;,&quot;messageDetails&quot;:&quot;Cannot invoke \&quot;ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\&quot; because the return value of \&quot;ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\&quot; is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\&quot;configuration\&quot;])&quot;}]
+classpath:resources/steps/task4b.feature:30
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print sensorDataVerification.response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

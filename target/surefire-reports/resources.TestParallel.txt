@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: resources.TestParallel
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.562 s <<< FAILURE! - in resources.TestParallel
+testParallel  Time elapsed: 3.561 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 201, response time in milliseconds: 143, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+status code was: 400, expected: 201, response time in milliseconds: 146, url: https://sensor-data-ingestion.dev.skycell.ch/v1/lora/uplink, response: 
+[{"message":"Impossible to deserialize message","messageDetails":"Cannot invoke \"ch.skycell.lora.uplink.dto.UplinkMessageBody.getDecoded_payload()\" because the return value of \"ch.skycell.lora.uplink.dto.LoraUplinkMessage.getUplink_message()\" is null (through reference chain: ch.skycell.lora.uplink.dto.LoraUplinkMessage[\"configuration\"])"}]
+classpath:resources/steps/task4b.feature:30
+classpath:resources/controller.feature:22 ==> expected: <0> but was: <1>
+	at resources.TestParallel.testParallel(TestParallel.java:23)
+
