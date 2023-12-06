@@ -4,10 +4,10 @@ function fn() {
 
   // Reading environment variables
   var config = {
-    authUrl: java.lang.System.getenv('authUrl'),
-    sensorUrl: java.lang.System.getenv('sensorUrl'),
-    verificationUrl: java.lang.System.getenv('verificationUrl'),
-    apiKey: java.lang.System.getenv('apiKey')
+    authUrl: java.lang.System.getenv('AUTHURL'),
+    sensorUrl: java.lang.System.getenv('SENSORURL'),
+    verificationUrl: java.lang.System.getenv('VERIFICATIONURL'),
+    apiKey: java.lang.System.getenv('APIKEY')
   };
 
   karate.configure('connectTimeout', 80000);

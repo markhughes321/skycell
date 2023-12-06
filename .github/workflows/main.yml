@@ -35,10 +35,10 @@ jobs:
     - name: Run Karate Tests
       run: npm run karate:run:project
       env:
-        authUrl: ${{ secrets.authUrl }}
-        sensorUrl: ${{ secrets.sensorUrl }}
-        verificationUrl: ${{ secrets.verificationUrl }}
-        apiKey: ${{ secrets.apiKey }}
+        authUrl: ${{ secrets.AUTHURL }}
+        sensorUrl: ${{ secrets.SENSORURL }}
+        verificationUrl: ${{ secrets.VERIFICATIONURL }}
+        apiKey: ${{ secrets.APIKEY }}
 
     - name: Zip Cucumber Reports
       run: zip -r cucumber-reports.zip target/cucumber-html-reports

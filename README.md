@@ -35,16 +35,16 @@ npm run karate:run:feature
 
 ## Running Tests in Github Actions
 
-Once you are in the root directory, you can run the project using the below commands
+Navigate to the [Projects Repository Actions sections](https://github.com/markhughes321/skycell/actions).
 
-```python
-# Runs all feature files
-npm run karate:run:project
+Click on the GitHub Action 'Nightly Karate Tests'
 
-# Runs the project using @ tags, you can set the tag in the .env
-npm run karate:run:feature
+![Alt text](image.png)
 
-```
+Trigger the Wrokflow manually. 
+
+![Alt text](image-1.png)
+
 
 ## Documentation
 

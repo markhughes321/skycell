@@ -34,10 +34,17 @@ Feature: Sensor Data Verification
     """
     When method post
     Then status 200
+    And print response
+    And print response.dataTypes[0]
     And match response == expectedResponse
-    
+    And match response.data == '#[6]'
+    And match response.dataTypes[0] == '<dataTypes>'
+    And match response.sensorCodes[0] == '<sensorCodes>'
+    And match response.data[0].d[*] == [<data>]
+
+
     Examples:
-      | dataTypes       | sensorCodes     |
-      | TEMPERATURE     | INTEGRATED      |
-      | BATTERY_VOLTAGE | BATTERY_VOLTAGE |
-      | TEMPERATURE     | CONNECTOR_1     |
+      | dataTypes       | sensorCodes     | data |
+      | TEMPERATURE     | INTEGRATED      | 23.1 |
+      | BATTERY_VOLTAGE | BATTERY_VOLTAGE | 1.3  |
+      | TEMPERATURE     | CONNECTOR_1     | 22.0 |

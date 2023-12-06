@@ -1,5 +1,5 @@
 TEST_FEATURE=@Controller
-authUrl=https://keycloak.dev.skycell.ch
-sensorUrl=https://sensor-data-ingestion.dev.skycell.ch
-verificationUrl=https://sensor-data-access.dev.skycell.ch
-apiKey=
+AUTHURL=https://keycloak.dev.skycell.ch
+SENSORURL=https://sensor-data-ingestion.dev.skycell.ch
+VERIFICATIONURL=https://sensor-data-access.dev.skycell.ch
+APIKEY=
