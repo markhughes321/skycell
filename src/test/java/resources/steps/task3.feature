@@ -1,12 +1,12 @@
 @TaskThree @LoggerCreation @ignore
-Feature: Logger Creation Test
+Feature: Creates the Logger Configuration
 
 
   Background: 
     * url sensorUrl
     * header apiKey = apiKey
 
-  Scenario Outline: Create a <loggerType> logger
+  Scenario Outline: Create the <loggerType> logger configuration 
     Given path 'v1', 'lora', 'configuration'
     And request 
     """

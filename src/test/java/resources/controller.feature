@@ -18,7 +18,7 @@ Feature: Controller File - Authenticates the user, sets up logger confgiuration,
     * def authToken = authenticate.response.access_token
 
     # Setup Configuration
-    * def configuration = call read('classpath:resources/steps/task3.feature')
+    * def sensorConfiguration = call read('classpath:resources/steps/task3.feature')
 
     # Sensor Data Ingestion
     * def sensorDataIngestion = call read('classpath:resources/steps/task4a.feature')
