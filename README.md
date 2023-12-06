@@ -1,18 +1,23 @@
 # SkyCell QA Challenge
 
-## Frameowrk
+## Overview
+This repository contains the solution for the SkyCell QA Challenge, which involves API testing using the Karate API testing framework.
+
+## Framework
 ### Karate API Testing
-Karate API was used for this challenge. Karate is an open-source java tool used for API testing and performance automation.
+Karate API is an open-source Java tool designed for API testing and performance automation.
 
 ## Installation
 
-Clone the repository
+To get started with this project, follow these steps:
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/markhughes321/skycell
 ```
 
-Install node modules
+2. Install Node.js modules:
 
 ```bash
 npm install
@@ -20,11 +25,11 @@ npm install
 
 ## Create a .env file
 
-In the root folder, create a .env file with the projects environment variables. Please see the .exampleEnv for reference.
+Create a .env file in the root folder with the project's environment variables. You can refer to the .exampleEnv file for guidance.
 
 ## Running Tests Locally
 
-Once you are in the root directory, you can run the project using the below commands
+To run tests locally, navigate to the project's root directory and use the following commands:
 
 ```python
 # Runs all feature files
@@ -37,9 +42,10 @@ npm run karate:run:feature
 
 ## Running Tests in Github Actions
 
-To run the tests on Github Actions click here [here](https://github.com/markhughes321/skycell/actions).
+To execute tests on GitHub Actions, follow these steps:
 
-Click the GitHub Action 'Nightly Karate Tests' button.
+1. Visit the [GitHub Actions](https://github.com/markhughes321/skycell/actions) page.
+2. Click on the 'Nightly Karate Tests' workflow.
 
 <img width="703" alt="Screenshot 2023-12-06 at 10 23 16" src="https://github.com/markhughes321/skycell/assets/9667977/8d4f9183-2e1c-42ae-95f6-218ae9c96322">
 
@@ -49,12 +55,9 @@ Then you can trigger the workflow manually.
 
 ## Cucumber Reports
 
-The Cucumber Reports will be attached as .zip file once the Github Action job has completed. 
-
-You can download them and open them in your browser locally to see the test report.
+Cucumber Reports will be generated as a .zip file once the GitHub Action job has completed. You can download and open them locally in your browser to view the test report.
 
 <img width="915" alt="image" src="https://github.com/markhughes321/skycell/assets/9667977/858a848c-77fb-4e8b-8908-a79f82dc3d64">
-
 
 ## Documentation
 
