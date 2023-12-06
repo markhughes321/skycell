@@ -8,6 +8,7 @@ on:
 jobs:
   run-karate-tests:
     runs-on: ubuntu-latest
+    environment: dev  # Specify your environment name here if you need to target a specific environment for secrets
 
     steps:
     - name: Check out repository
@@ -26,6 +27,11 @@ jobs:
 
     - name: Run Karate Tests
       run: mvn clean test
+      env:  # Set environment variables from GitHub secrets here
+        AUTH_URL: ${{ secrets.AUTHURL }}
+        SENSOR_URL: ${{ secrets.SENSORURL }}
+        VERIFICATION_URL: ${{ secrets.VERIFICATIONURL }}
+        API_KEY: ${{ secrets.APIKEY }}
 
     - name: Zip Cucumber Reports
       run: zip -r cucumber-reports.zip target/cucumber-html-reports

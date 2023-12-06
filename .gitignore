@@ -13,3 +13,5 @@ bin/
 .gradle
 target
 skycell/target/**
+.env
+node_modules

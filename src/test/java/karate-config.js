@@ -1,28 +1,17 @@
 function fn() {
-  var env = karate.env; // get system property 'karate.env'
+  var env = karate.env || 'dev'; // Set to 'dev' by default if karate.env is not specified
   karate.log('karate.env system property was:', env);
-  if (!env) {
-    env = 'dev';
-  }
-  var config = {
-    env: env,
-    authUrl: 'https://keycloak.dev.skycell.ch',
-    sensorUrl: 'https://sensor-data-ingestion.dev.skycell.ch',
-    verificationUrl: 'https://sensor-data-access.dev.skycell.ch',
-    apiKey: 'NNSXS.RPNRQUVEAQHYIBRJPYB5BMF36VT2E4ZIQWLCO6Y.ZP7FKSYX6J2XO2SRNBPHWQJHIBB5ZWTULHPI27N7C4IMQAKB6QYA'
 
-  }
-  if (env == 'dev') {
-    // customize
-    // e.g. config.userEmail = 'bar';
-    // e.g. config.userPassword = 'bar';
-  } 
-  else if (env == 'eph') {
-    // customize
-  }
-  else if (env == 'stg') {
-    // customize
-  }
+  // Reading environment variables
+  var config = {
+    authUrl: java.lang.System.getenv('authUrl'),
+    sensorUrl: java.lang.System.getenv('sensorUrl'),
+    verificationUrl: java.lang.System.getenv('verificationUrl'),
+    apiKey: java.lang.System.getenv('apiKey')
+  };
+
+  karate.configure('connectTimeout', 80000);
+  karate.configure('readTimeout', 80000);
 
   return config;
 }
