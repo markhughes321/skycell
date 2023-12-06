@@ -1,5 +1,6 @@
-@Task4 @Controller
-Feature: Controller File
+@TaskFour @Controller
+Feature: Controller File - Authenticates the user, sets up logger confgiuration,
+  creates logger ingestion data, and verifies the data has been submitted correctly
 
 
   Background:
@@ -11,7 +12,7 @@ Feature: Controller File
     * def tenMinuteIntervals = DateTimeFormatter.getTenMinuteIntervals()
     * def loggerType = 'MR_812P'
 
-  Scenario:
+  Scenario: Workflow - Sensor Data Ingestion and Verification 
     # Authenticate
     * def authenticate = call read('classpath:resources/steps/task2.feature')
     * def authToken = authenticate.response.access_token
