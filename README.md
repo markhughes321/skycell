@@ -1,7 +1,7 @@
 # SkyCell QA Challenge
 
-## Frameowrk => Karate API Testing
-
+## Frameowrk
+### Karate API Testing
 Karate API was used for this challenge. Karate is an open-source java tool used for API testing and performance automation.
 
 ## Installation
