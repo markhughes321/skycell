@@ -55,9 +55,14 @@ Then you can trigger the workflow manually.
 
 ## Cucumber Reports
 
-Cucumber Reports will be generated as a .zip file once the GitHub Action job has completed. You can download and open them locally in your browser to view the test report.
+Cucumber Reports will be generated as a .zip file once the GitHub Action job has completed.
 
 <img width="915" alt="image" src="https://github.com/markhughes321/skycell/assets/9667977/858a848c-77fb-4e8b-8908-a79f82dc3d64">
+
+You can download and open them locally in your browser to view the test report.
+
+<img width="823" alt="image" src="https://github.com/markhughes321/skycell/assets/9667977/0d2f04ab-c69e-4038-91bc-613fa18334e7">
+
 
 ## Documentation
 
