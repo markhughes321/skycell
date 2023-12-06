@@ -1,6 +1,8 @@
-# Karate API Testing
+# SkyCell QA Challenge
 
-Karate is an open-source tool to for API test and performance automation.
+## Frameowrk => Karate API Testing
+
+Karate API was used for this challenge. Karate is an open-source java tool used for API testing and performance automation.
 
 ## Installation
 
@@ -35,15 +37,23 @@ npm run karate:run:feature
 
 ## Running Tests in Github Actions
 
-Navigate to the [Projects Repository Actions sections](https://github.com/markhughes321/skycell/actions).
+To run the tests on Github Actions click here [here](https://github.com/markhughes321/skycell/actions).
 
-Click on the GitHub Action 'Nightly Karate Tests'
+Click the GitHub Action 'Nightly Karate Tests' button.
 
-![Alt text](image.png)
+<img width="703" alt="Screenshot 2023-12-06 at 10 23 16" src="https://github.com/markhughes321/skycell/assets/9667977/8d4f9183-2e1c-42ae-95f6-218ae9c96322">
 
-Trigger the Wrokflow manually. 
+Then you can trigger the workflow manually. 
 
-![Alt text](image-1.png)
+<img width="452" alt="Screenshot 2023-12-06 at 10 24 26" src="https://github.com/markhughes321/skycell/assets/9667977/caf24e3a-4cd7-42e4-a7fe-c3421c857a54">
+
+## Cucumber Reports
+
+The Cucumber Reports will be attached as .zip file once the Github Action job has completed. 
+
+You can download them and open them in your browser locally to see the test report.
+
+<img width="915" alt="image" src="https://github.com/markhughes321/skycell/assets/9667977/858a848c-77fb-4e8b-8908-a79f82dc3d64">
 
 
 ## Documentation
