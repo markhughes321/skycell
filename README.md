@@ -20,7 +20,20 @@ npm install
 
 In the root folder, create a .env file with the projects environment variables. Please see the .exampleEnv for reference.
 
-## Usage
+## Running Tests Locally
+
+Once you are in the root directory, you can run the project using the below commands
+
+```python
+# Runs all feature files
+npm run karate:run:project
+
+# Runs the project using @ tags, you can set the tag in the .env
+npm run karate:run:feature
+
+```
+
+## Running Tests in Github Actions
 
 Once you are in the root directory, you can run the project using the below commands
 

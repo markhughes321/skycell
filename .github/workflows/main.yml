@@ -2,13 +2,12 @@ name: Nightly Karate Tests
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs at 1 AM CET
-  workflow_dispatch:  # Allows manual triggering of the workflow
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   run-karate-tests:
     runs-on: ubuntu-latest
-    environment: dev  # Specify your environment name here if you need to target a specific environment for secrets
 
     steps:
     - name: Check out repository
@@ -20,18 +19,26 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
     - name: Install Maven
       run: |
         sudo apt-get update
         sudo apt-get install -y maven
 
+    - name: Install Node.js Dependencies
+      run: npm install
+
     - name: Run Karate Tests
-      run: mvn clean test
-      env:  # Set environment variables from GitHub secrets here
-        AUTH_URL: ${{ secrets.AUTHURL }}
-        SENSOR_URL: ${{ secrets.SENSORURL }}
-        VERIFICATION_URL: ${{ secrets.VERIFICATIONURL }}
-        API_KEY: ${{ secrets.APIKEY }}
+      run: npm run karate:run:project
+      env:
+        authUrl: ${{ secrets.authUrl }}
+        sensorUrl: ${{ secrets.sensorUrl }}
+        verificationUrl: ${{ secrets.verificationUrl }}
+        apiKey: ${{ secrets.apiKey }}
 
     - name: Zip Cucumber Reports
       run: zip -r cucumber-reports.zip target/cucumber-html-reports
