@@ -17,7 +17,7 @@ Feature: Sensor Data Ingestion
     And request sensorIngestion
     When method post
     Then status 201
-
+    And match response == ''
   
     Examples:
       | recievedAt               | index  |

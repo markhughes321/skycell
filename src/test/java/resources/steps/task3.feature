@@ -18,6 +18,7 @@ Feature: Creates the Logger Configuration
     """
     When method post
     Then status 201
+    And match response == ''
 
     Examples:
       | loggerType  | baseInterval  |
