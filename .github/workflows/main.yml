@@ -39,6 +39,8 @@ jobs:
         SENSORURL: ${{ secrets.SENSORURL }}
         VERIFICATIONURL: ${{ secrets.VERIFICATIONURL }}
         APIKEY: ${{ secrets.APIKEY }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
 
     - name: Zip Cucumber Reports
       run: zip -r cucumber-reports.zip target/cucumber-html-reports
