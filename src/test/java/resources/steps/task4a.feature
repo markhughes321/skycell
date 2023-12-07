@@ -11,7 +11,7 @@ Feature: Sensor Data Ingestion
     * def timestampInSeconds = DateTimeFormatter.getCurrentTimestampInSeconds()
     * def sensorIngestion = read('classpath:resources/requests/sensorIngestion.json')
     
-  Scenario Outline: Sensor Data Ingestion <times>
+  Scenario Outline: Sensor Data Ingestion
     Given path 'v1', 'lora', 'uplink'
     And set sensorIngestion.received_at = <recievedAt>
     And request sensorIngestion
