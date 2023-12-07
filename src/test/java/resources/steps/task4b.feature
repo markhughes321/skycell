@@ -11,7 +11,7 @@ Feature: Sensor Data Verification
     * def dataTypes = "#regex (TEMPERATURE|BATTERY_VOLTAGE)"
     * def sensorCodes = "#regex (CONNECTOR_1|BATTERY_VOLTAGE|INTEGRATED)"
     * def positions = "#regex (UNSPECIFIED|INTERNAL)"
-    * def data = "#number"
+    * def data = '#? _ > 1 && _ < 24'
     * def dataEnteries =  {"t": "#regex \\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}", "d": "#[] data" }
 
   Scenario Outline: Sensor Data Verification
