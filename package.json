@@ -4,8 +4,8 @@
   "description": "Karate is an open-source tool to for API test and performance automation.",
   "main": "index.js",
   "scripts": {
-    "karate:run:project": "dotenv cross-var -- bash -c 'mvn clean test -DauthUrl=$AUTHURL -DverificationUrl=$VERIFICATIONURL -DsensorUrl=$SENSORURL -DapiKey=$APIKEY'",
-    "karate:run:feature": "dotenv cross-var -- bash -c 'mvn clean test \"-Dkarate.options=--tags $TEST_FEATURE \" -DauthUrl=$AUTHURL -DverificationUrl=$VERIFICATIONURL -DsensorUrl=$SENSORURL -DapiKey=$APIKEY'"
+    "karate:run:project": "dotenv cross-var -- bash -c 'mvn clean test -DauthUrl=$AUTHURL -DverificationUrl=$VERIFICATIONURL -DsensorUrl=$SENSORURL -DapiKey=$APIKEY -Dusername=$USERNAME -Dpassword=$PASSWORD'",
+    "karate:run:feature": "dotenv cross-var -- bash -c 'mvn clean test \"-Dkarate.options=--tags $TEST_FEATURE \" -DauthUrl=$AUTHURL -DverificationUrl=$VERIFICATIONURL -DsensorUrl=$SENSORURL -DapiKey=$APIKEY -Dusername=$USERNAME -Dpassword=$PASSWORD'"
   },
   "author": "",
   "license": "ISC",
